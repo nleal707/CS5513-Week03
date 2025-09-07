@@ -1,6 +1,7 @@
 import Head from 'next/head';
 import Layout, { siteTitle } from '../components/layout';
 import utilStyles from '../styles/utils.module.css';
+import Link from 'next/link';
  
 export default function Home() {
   return (
@@ -11,8 +12,7 @@ export default function Home() {
       <section className={utilStyles.headingMd}>
         <p>Hello, I'm Nick. I'm a full stack web developer.</p>
         <p>
-          (This is a sample website - you’ll be building a site like this on{' '}
-          <a href="https://nextjs.org/learn">our Next.js tutorial</a>.)
+          Read <Link href="/posts/first-post">this page!</Link>
         </p>
       </section>
     </Layout>
